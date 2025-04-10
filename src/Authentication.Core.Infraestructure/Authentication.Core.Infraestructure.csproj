@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Core.Application\Authentication.Core.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistent\Context\Configurations\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MicroServiceCoreShared\Shared.Core\Shared.Core.csproj" />
+    <ProjectReference Include="..\..\..\Shared.Core\Shared.Core\Shared.Core.csproj" />
+    <ProjectReference Include="..\Authentication.Core.Application\Authentication.Core.Application.csproj" />
     <ProjectReference Include="..\Authentication.Core.Infraestructure\Authentication.Core.Infraestructure.csproj" />
   </ItemGroup>
 

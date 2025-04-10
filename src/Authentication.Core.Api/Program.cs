@@ -1,5 +1,3 @@
-
-
 using Microsoft.EntityFrameworkCore;
 using Shared.Core;
 
@@ -12,7 +10,8 @@ var allowedOrigins = environment == "Development"
 
 // Add services to the container.
 var configuration = builder.Configuration;
-
+var fileName = "logs/authentication-core"; // Define el nombre del archivo para los logs
+builder.Services.AddServicesShared<MyDbContext>(builder.Services, configuration, fileName); // Reemplaza MyDbContext con tu clase de contexto
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -37,6 +36,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseHttpsRedirection();
 app.AddMiddleware();
