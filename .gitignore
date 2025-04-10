@@ -1,0 +1,64 @@
+# Archivos de salida
+bin/
+obj/
+*.exe
+*.dll
+
+# Archivos temporales de .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Dependencias y NuGet
+**/packages/*
+*.nupkg
+
+# Logs y bases de datos locales
+*.log
+*.sqlite
+*.mdf
+*.ldf
+*.cache
+**/*.cache
+**/obj/**
+
+# Archivos de configuración del IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Archivos generados por pruebas
+TestResults/
+[Tt]est[Rr]esult*
+
+# Archivos de compilación
+*.csproj.user
+*.msbuilds
+*.pubxml
+*.pubxml.user
+
+# Archivos de configuración de Visual Studio
+.vs/
+.vsconfig
+
+# Archivos generados por Entity Framework
+**/Migrations/
+**/*.bak
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
+
+# Archivos temporales de macOS
+.DS_Store
+
+# Archivos de configuración de JetBrains Rider (si usas este IDE)
+.idea/
+
+# Archivos de configuración de ReSharper (si usas este complemento)
+.reSharper/
+
+# Archivos de NuGet
+.nuget/
